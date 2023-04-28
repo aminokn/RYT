@@ -1,0 +1,20 @@
+
+
+<div class="teacher" *ngFor = "let teacher of teachers">
+  <h3>
+      <a [title] = "teacher.fullname">
+          {{teacher.id}}. {{ teacher.fullname }}
+      </a>
+  </h3>
+  <p>Working in: {{teacher.university}}</p>
+  <img src={{teacher.img}} class="photo" alt="">
+
+  <p *ngIf="teacher.description">
+      Description: {{ teacher.description }}
+  </p>
+
+  <button class="Information" type="button" (click)="LinkedIn(teacher.url)">
+      LinkedIn
+  </button>
+</div>
+

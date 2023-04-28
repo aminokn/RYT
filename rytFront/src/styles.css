@@ -1,0 +1,44 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size: inherit;
+}
+
+body{
+  font-size: 20px;
+}
+
+/* ================header=============== */
+
+app-top-bar {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  background: rgb(69, 96, 252);
+}
+
+.header-nav{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.header-nav > *{
+  margin-right: 50px;
+  color: white;
+}
+
+.logo{
+  font-size: 40px;
+}

@@ -1,0 +1,17 @@
+
+<div class="university-list" *ngFor = "let university of universities">
+    <h3>
+        <a [title] = "university.name">
+            {{ university.name }}
+        </a>
+    </h3>
+    <img src={{university.img}} class="pic" alt="">
+
+    <p *ngIf="university.description">
+        Description: {{ university.description }}
+    </p>
+
+    <button class="Info" type="button" (click)="moreInfo(university.url)">
+        More Info
+    </button>
+</div>
