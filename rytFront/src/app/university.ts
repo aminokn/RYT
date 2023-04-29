@@ -18,7 +18,21 @@ export const universities = [
       id: 2,
       name: 'SDU',
       description: 'Suleiman Demirel University was opened in 1996 with the participation of the First President of Kazakhstan – Elbasy Nursultan Nazarbayev and the 9th President of Turkey – Suleiman Demirel. The main goal of the Strategic Development Plan of the University is to become one of the best international universities in the country and throughout Central Asia.',
-      img: "https://kbtu.edu.kz/images/kbtu_logo_min.png",
+      img: "https://sdu.edu.kz/wp-content/uploads/2019/09/SDU-logo@2x.svg",
       url: "https://sdu.edu.kz/ru/suleyman-demirel-university-ru/"
+  },
+  {
+    id: 3,
+    name: 'Narxoz',
+    description: 'Suleiman Demirel University was opened in 1996 with the participation of the First President of Kazakhstan – Elbasy Nursultan Nazarbayev and the 9th President of Turkey – Suleiman Demirel. The main goal of the Strategic Development Plan of the University is to become one of the best international universities in the country and throughout Central Asia.',
+    img: "https://narxoz.edu.kz/images_1/tild3966-3736-4666-b434-333337386661__1_obr.svg",
+    url: "https://narxoz.edu.kz/"
+  },
+  {
+    id: 4,
+    name: 'KAZNU',
+    description: 'Suleiman Demirel University was opened in 1996 with the participation of the First President of Kazakhstan – Elbasy Nursultan Nazarbayev and the 9th President of Turkey – Suleiman Demirel. The main goal of the Strategic Development Plan of the University is to become one of the best international universities in the country and throughout Central Asia.',
+    img: "https://www.kaznu.kg/assets/images/logonew.png",
+    url: "https://www.kaznu.kz/ru"
   }
 ];
