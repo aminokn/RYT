@@ -25,5 +25,23 @@ export const teachers = [
     rating: 5,
     description: 'asdfgh',
     url: 'https://github.com/Beisenbek'
+},
+{
+    id: 3,
+    fullname: 'Elibay Nuptebek',
+    university : 'KBTU',
+    img : "",
+    rating: 5,
+    description: 'asdfgh',
+    url: 'https://github.com/Beisenbek'
+},
+{
+    id: 4,
+    fullname: 'Pakizar Shamoi',
+    university : 'KBTU',
+    img : "",
+    rating: 5,
+    description: 'asdfgh',
+    url: 'https://github.com/Beisenbek'
 }
 ]

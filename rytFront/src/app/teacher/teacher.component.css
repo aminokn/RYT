@@ -4,3 +4,23 @@
 .details{
   text-decoration: none;
 }
+
+.teacher{
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  width: 24%;
+}
+
+.teacher__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 20px 20px;
+}
+.teacher__description{
+  overflow: hidden;
+}
