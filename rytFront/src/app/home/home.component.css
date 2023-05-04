@@ -1,3 +1,16 @@
-*{
-  color: black;
+
+.home{
+  background-image: url(src\home_pic.jpg);
+  background-size: cover;
+  height: 87vh;
+}
+
+.home__container{
+  /* margin: 109px 0; */
+  padding: 200px;
+  
+}
+
+.home__inner{
+
 }
