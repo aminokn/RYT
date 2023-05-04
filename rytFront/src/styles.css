@@ -11,15 +11,16 @@
 
 body{
   font-size: 20px;
+  background: #fff;
 }
 
 /* ================header=============== */
 
 app-top-bar {
-  padding: 30px 0;
+  padding: 30px 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: rgb(69, 96, 252);
 }

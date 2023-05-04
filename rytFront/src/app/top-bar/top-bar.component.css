@@ -14,11 +14,20 @@
   font-weight: 700;
 }
 
-.header__nav > *{
+.header__nav > a{
   margin-right: 50px;
   color: white;
 }
 
 .logo{
   font-size: 20px;
+}
+
+.nav__link{
+  opacity: 0.90;
+  transition: opacity 0.2s linear;
+}
+
+.nav__link:hover{
+  opacity: 1;
 }

@@ -6,11 +6,27 @@
 }
 
 .home__container{
-  /* margin: 109px 0; */
-  padding: 200px;
+  padding: 200px 150px;
   
 }
 
-.home__inner{
+.home__title{
+  margin-right: auto;
+  font-size: 1.5em;
+}
 
+.home__inner{
+  display: flex;
+  flex-direction: row;
+}
+
+.login__form{
+  background-color: #fff;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  height: 300px;
+  width: 35%;
 }
