@@ -9,7 +9,7 @@ import { TeachersProfileComponent } from './teachers-profile/teachers-profile.co
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { UniversityListComponent } from './university-list/university-list.component';
-import { UniversityTeachersComponent } from './university-teachers/university-teachers.component';
+import { UniversityProfileComponent } from './university-profile/university-profile.component';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { UniversityTeachersComponent } from './university-teachers/university-te
     TeachersProfileComponent,
     HomeComponent,
     UniversityListComponent,
-    UniversityTeachersComponent,
+    UniversityProfileComponent,
 
   ],
   imports: [

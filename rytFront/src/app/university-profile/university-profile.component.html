@@ -1,0 +1,20 @@
+<div class="uni__profile">
+    <h2>university-profile works!</h2>
+    <div class="university" *ngIf="uni">
+        <div class="uni__container">
+            <div class="unt__inner">
+                <div class="uni__card">
+                    <img class="uni__img" src={{uni.img}}>
+                    <div class="uni__name">
+                        {{uni.name}}
+                    </div>
+                </div>
+                <div class="uni__info">
+                    {{uni.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

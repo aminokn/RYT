@@ -1,5 +1,7 @@
 <div class="university__container">
-    <div class="university-list" *ngFor = "let university of universities">
+    <a [routerLink]="['/universities', university.id]" *ngFor = "let university of universities" class="test">
+    <div class="university-list">
+        
         <h3 class="uni__title">
             <a [title] = "university.name">
                 {{ university.name }}
@@ -9,9 +11,12 @@
             <img src={{university.img}} class="pic" alt="">
         </div>
         
+        
         <button class="info" type="button" (click)="moreInfo(university.url)">
             More Info
         </button>
+        
     </div>
+</a>
 </div>
 
