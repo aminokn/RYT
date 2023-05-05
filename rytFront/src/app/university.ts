@@ -36,3 +36,6 @@ export const universities = [
     url: "https://www.kaznu.kz/ru"
   }
 ];
+export interface AuthToken {
+  token: string;
+}

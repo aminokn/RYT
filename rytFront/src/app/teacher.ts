@@ -45,3 +45,6 @@ export const teachers = [
     url: 'https://www.linkedin.com/in/pakizar-shamoi-5ab5833b/'
 }
 ]
+export interface AuthToken {
+  token: string;
+}

@@ -2,12 +2,29 @@
   <div class="home__container">
     <div class="home__inner">
       <div class="home__title">
-        <h1>Real Students, Real Ratings</h1> 
+        <h1>Real Students, Real Ratings</h1>
         <h2>Finding the Best Professors at<br> Your University</h2>
       </div>
+
+      <ng-container *ngIf="!logged">
       <fieldset class="login__form">
-        <div></div>
-      </fieldset>
+        <h2>Login Form</h2>
+        <div class = "login__input">
+          <label>Username: </label>
+          <input type="text" [(ngModel)]="username">
+          <label>Password: </label>
+          <input type="text" [(ngModel)]="password">
+          <button (click)="login">Login</button>
+        </div>
+       </fieldset>
+      </ng-container>
+
+      <ng-container *ngIf="logged">
+        <div>
+          <button (click)="logout()">Log out</button>
+        </div>
+      </ng-container>
+
     </div>
   </div>
 </div>
