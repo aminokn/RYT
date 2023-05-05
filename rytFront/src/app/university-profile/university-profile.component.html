@@ -1,17 +1,23 @@
 <div class="uni__profile">
-    <h2>university-profile works!</h2>
     <div class="university" *ngIf="uni">
         <div class="uni__container">
-            <div class="unt__inner">
+            <div class="uni__inner">
                 <div class="uni__card">
-                    <img class="uni__img" src={{uni.img}}>
-                    <div class="uni__name">
+                    <div class="uni__img">
+                        <img class="pic" src={{uni.img}}>
+                    </div>
+                    <hr class="separator">
+                    <div class="uni__name bold">
                         {{uni.name}}
                     </div>
                 </div>
-                <div class="uni__info">
-                    {{uni.description}}
+                <div class="uni__content">
+                    <h2 class="uni__title semibold">University Overview</h2>
+                    <div class="uni__info regular">
+                        {{uni.description}}
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>

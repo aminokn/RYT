@@ -49,6 +49,18 @@ body{
   font-size: 14px;
 }
 
+.bold{
+  font-weight: 700;
+}
+
+.semibold{
+  font-weight: 400;
+}
+
+.regular{
+  font-weight: 300;
+}
+
 /* ================header=============== */
 
 app-top-bar {
