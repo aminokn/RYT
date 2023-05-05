@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { UniversityListComponent } from './university-list/university-list.component';
 import { UniversityProfileComponent } from './university-profile/university-profile.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { UniversityProfileComponent } from './university-profile/university-prof
     HomeComponent,
     UniversityListComponent,
     UniversityProfileComponent,
-
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

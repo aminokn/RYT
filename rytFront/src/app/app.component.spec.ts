@@ -29,7 +29,7 @@ describe('AppComponent', () => {
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
+    const compiled = fixture.nativeElement as Element;
     expect(compiled.querySelector('.content span')?.textContent).toContain('rytFront app is running!');
   });
 });
