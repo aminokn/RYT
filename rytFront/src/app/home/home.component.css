@@ -7,7 +7,9 @@
 
 .home__container{
   padding: 200px 150px 0;
-  height: 100vh ;
+  height: 100vh;
+  backdrop-filter: brightness(70%);
+  backdrop-filter: blur(1px);
 }
 
 .home__title{
@@ -16,9 +18,17 @@
   color: white;
 }
 
+.home__text{
+  padding:5px;
+  width: 730px;
+  border: none;
+  border-radius: 8px;
+}
+
 .home__inner{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .login__form{
@@ -26,8 +36,9 @@
   font-size: 25px;
   border: none;
   border-radius: 8px;
-  padding: 5px;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+  padding: 5px;
   height: 300px;
   width: 35%;
 }
