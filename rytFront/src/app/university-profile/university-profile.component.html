@@ -1,15 +1,18 @@
 <div class="uni__profile">
     <div class="university" *ngIf="uni">
-        <div class="uni__container">
+        <div class="container">
             <div class="uni__inner">
-                <div class="uni__card">
-                    <div class="uni__img">
-                        <img class="pic" src={{uni.img}}>
+                <div class="uni__leftcol">
+                    <div class="uni__card">
+                        <div class="uni__img">
+                            <img class="pic" src={{uni.img}}>
+                        </div>
+                        <hr class="separator">
+                        <div class="uni__name bold">
+                            {{uni.name}}
+                        </div>
                     </div>
-                    <hr class="separator">
-                    <div class="uni__name bold">
-                        {{uni.name}}
-                    </div>
+                    <button class="btn semibold" routerLink="{{uni.name}}">See Teachers</button>
                 </div>
                 <div class="uni__content">
                     <h2 class="uni__title semibold">University Overview</h2>

@@ -1,6 +1,6 @@
 
 <div class="teacher__container">
-<div class="teacher" *ngFor = "let teacher of teachers">
+<div class="teacher box" *ngFor = "let teacher of teachers" routerLink="{{teacher.id}}">
         
         <div class="teacher__pic">
             <img src={{teacher.img}} class="pic circle__pic">
@@ -14,7 +14,7 @@
         <div class="teacher__rating">
             {{teacher.rating}}
         </div>
-        <button class="teacher__link" type="button" (click)="LinkedIn(teacher.url)">
+        <button class="btn" type="button" (click)="LinkedIn(teacher.url)">
             LinkedIn
         </button>
 </div>

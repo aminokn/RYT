@@ -29,10 +29,14 @@ body{
   position: absolute;
   max-width: 100%;
   max-height: 100%;
+
+  min-height: 150px;
+  min-width: 150px;
 }
 
 .circle__pic{
   border-radius: 50%;
+  border: 3px solid rgb(90, 115, 252);
 }
 
 .logo{
@@ -59,6 +63,48 @@ body{
 
 .regular{
   font-weight: 300;
+}
+
+.container{
+  padding: 50px 100px;
+}
+
+.separator{
+  width: 100%;
+  border: 1px solid rgba(27, 27, 27, 0.3);
+  border-top: none;
+  border-radius: 2px; 
+}
+
+.li__icon{
+  height: 40px;
+}
+
+.vline{
+  height: 90%;
+  border-radius: 3px;
+  border: 1px solid rgba(27, 27, 27, 0.3);
+  align-self: center;
+}
+
+.box{
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.btn{
+  border: none;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  width: 40%;
+  cursor: pointer;
+  transition: box-shadow .2s;
+}
+
+.btn:hover{
+  box-shadow: 0 0px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 10%);;
 }
 
 /* ================header=============== */
