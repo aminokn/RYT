@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Teacher, teachers } from '../teacher';
-
+import { Teacher } from '../teacher';
+import { TeacherService } from '../teacher.service';
 @Component({
   selector: 'app-teachers-profile',
   templateUrl: './teachers-profile.component.html',
@@ -10,6 +10,7 @@ import { Teacher, teachers } from '../teacher';
 export class TeachersProfileComponent implements OnInit{
   constructor(
     private route: ActivatedRoute,
+    private teacherService: TeacherService
   ){}
   teacher: Teacher | undefined;
 
@@ -17,7 +18,14 @@ export class TeachersProfileComponent implements OnInit{
     const routeParams = this.route.snapshot.paramMap;
     const teacherIdFromRoute = Number(routeParams.get('t_id'));
 
-    this.teacher = teachers.find(t => t.id === teacherIdFromRoute);
+    this.teacherService.getTeacher(teacherIdFromRoute).subscribe(
+      (teacher) => {
+        this.teacher = teacher;
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
   }
 
   LinkedIn(url: string | undefined) {

@@ -13,7 +13,18 @@ export class UniversityService {
   getUniversities(): Observable<University[]>{
     return this.client.get<University[]>(`${this.BASE_URL}/api/universities/`)
   }
+  getUniversity(id: number): Observable<University>{
+    return this.client.get<University>(`${this.BASE_URL}/api/university/${id}`)
+  }
   getUniversityTeachers(id: number): Observable<Teacher[]> {
-    return this.client.get<Teacher[]>(`${this.BASE_URL}/api/universities/${id}/teachers/`)
+    return this.client.get<Teacher[]>(`${this.BASE_URL}/api/university/${id}/teachers`)
+  }
+
+  getUnivesityNameById(id: number): Observable<University> {
+    return this.client.get<University>(`${this.BASE_URL}/api/uni/${id}`);
+  }
+
+  sleep(ms: number){ 
+    new Promise(r => setTimeout(r, ms));
   }
 }

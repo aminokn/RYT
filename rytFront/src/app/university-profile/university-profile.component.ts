@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { University, universities } from '../university';
+import { University} from '../university';
+import { UniversityService } from '../university.service';
 
 @Component({
   selector: 'app-university-profile',
@@ -10,6 +11,7 @@ import { University, universities } from '../university';
 export class UniversityProfileComponent implements OnInit{
   constructor(
     private route: ActivatedRoute,
+    private uniService: UniversityService
   ) { }
 
   uni: University | undefined;
@@ -17,7 +19,15 @@ export class UniversityProfileComponent implements OnInit{
   ngOnInit() {
     const routeParams = this.route.snapshot.paramMap;
     const uniIdFromRoute = Number(routeParams.get('id'));
-  
-    this.uni = universities.find(uni => uni.id === uniIdFromRoute);
+
+    this.uniService.getUniversity(uniIdFromRoute).subscribe(
+      (uni) => {
+        this.uni = uni;
+        console.log(uni);
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
   }
 }
