@@ -1,0 +1,25 @@
+.footer{
+    background: rgb(53, 76, 205);
+    color: white;
+}
+
+.footer__container{
+    padding: 30px 150px;
+}
+
+.footer__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.footer__btn{
+    background: none;
+    border: none;
+}

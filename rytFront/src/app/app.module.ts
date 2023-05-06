@@ -9,6 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { UniversityListComponent } from './university-list/university-list.component';
 import { UniversityProfileComponent } from './university-profile/university-profile.component';
+import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import {AuthInterceptor} from "./AuthInterceptor";
 import { HttpClientModule } from '@angular/common/http';
@@ -25,7 +29,7 @@ import { NgxStarRatingModule } from 'ngx-star-rating';
     UniversityListComponent,
     UniversityProfileComponent,
     RatingComponent,
-
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +45,7 @@ import { NgxStarRatingModule } from 'ngx-star-rating';
       useClass: AuthInterceptor,
       multi: true
     }
+
   ],
   bootstrap: [AppComponent]
 })

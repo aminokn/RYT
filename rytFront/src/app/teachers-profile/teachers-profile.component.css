@@ -1,0 +1,61 @@
+.teacher__inner{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.teacher__card{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 100px;
+    margin-bottom: 25px;
+}
+
+.teacher__pic{
+    padding: 3px;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin-right: 100px;
+  }
+
+.teacher__text{
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 0 0;
+}
+
+.teacher__description{
+    margin-bottom: 25px;
+}
+
+.teacher__btn{
+    padding: 0;
+    border: none;
+    background: none;
+    fill: rgb(53, 76, 205);
+}
+
+.teacher__content{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.teacher__rate{
+    width: 33%;
+}
+
+.teacher__comments{
+    width: 33%;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    
+}
+
+.rate__title{
+    margin-bottom: 30px;
+}
