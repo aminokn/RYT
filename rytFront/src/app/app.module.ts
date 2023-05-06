@@ -11,11 +11,9 @@ import { UniversityListComponent } from './university-list/university-list.compo
 import { UniversityProfileComponent } from './university-profile/university-profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-
-
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import {AuthInterceptor} from "./AuthInterceptor";
-
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +24,14 @@ import {AuthInterceptor} from "./AuthInterceptor";
     HomeComponent,
     UniversityListComponent,
     UniversityProfileComponent,
+    RatingComponent,
     FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     {
