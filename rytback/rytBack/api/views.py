@@ -2,19 +2,21 @@ from http.client import HTTPResponse
 
 from django.db.models import QuerySet
 from django.http import JsonResponse
-from django.shortcuts import render
-
 from rest_framework import generics
 from rest_framework.decorators import api_view
-
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import *
 from .serializers import *
 from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 #CBV
 class UniversityListAPIView(generics.ListAPIView):
     queryset = University.objects.all()
+    permission_classes = (AllowAny,)
     serializer_class = UniversitySerializer
 
 class UniversityByIdAPIView(APIView):
