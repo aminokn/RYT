@@ -5,6 +5,7 @@ import { TeacherComponent } from './teacher/teacher.component';
 import { HomeComponent } from './home/home.component';
 import { TeachersProfileComponent } from './teachers-profile/teachers-profile.component';
 import { UniversityProfileComponent } from './university-profile/university-profile.component';
+import { RatingComponent } from './rating/rating.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'universities/:id/:name', component: TeacherComponent},
   { path: 'universities/:id', component: UniversityProfileComponent},
   { path: 'teacher/:id', component: TeachersProfileComponent},
+  { path: 'rating', component: RatingComponent}
 ];
 
 @NgModule({
