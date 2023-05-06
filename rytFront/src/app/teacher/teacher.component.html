@@ -1,4 +1,3 @@
-
 <div class="teacher__container">
 
 <div class="teacher box" *ngFor = "let teacher of teachers" routerLink="{{teacher.id}}">
@@ -13,6 +12,7 @@
         <p>{{teacher.university}}</p>
         <div class="teacher__rating">
             {{teacher.rating}}
+              <ngx-star-rating [id]="'rating'" [disabled]='true'></ngx-star-rating>
         </div>
         <button class="btn" type="button" (click)="LinkedIn(teacher.url)">
             LinkedIn

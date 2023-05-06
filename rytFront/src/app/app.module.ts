@@ -15,7 +15,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import {AuthInterceptor} from "./AuthInterceptor";
-
+import { HttpClientModule } from '@angular/common/http';
+import { RatingComponent } from './rating/rating.component';
+import { NgxStarRatingModule } from 'ngx-star-rating';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,16 @@ import {AuthInterceptor} from "./AuthInterceptor";
     HomeComponent,
     UniversityListComponent,
     UniversityProfileComponent,
+    RatingComponent,
     FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxStarRatingModule,
+
   ],
   providers: [
     {

@@ -1,4 +1,3 @@
-
 .home{
   background-image: url(src\home_pic.jpg);
   background-size:100%;
@@ -41,4 +40,8 @@
   padding: 5px;
   height: 300px;
   width: 35%;
+}
+
+.log-out__button{
+  
 }

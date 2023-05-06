@@ -42,3 +42,18 @@
   margin-left: 50px;
   margin-bottom: 20px;
 }
+
+.teacher__link{
+  width: 40%;
+
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+::ng-deep label.star {
+  padding: 0 5px !important;
+  font-size: 20px !important;
+  color: #ffd148 !important;
+  }
+}
