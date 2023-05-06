@@ -7,3 +7,8 @@ export interface Teacher{
     description: string;
     url: string;
 }
+
+export interface AuthToken {
+  token: string;
+}
+

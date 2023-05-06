@@ -7,7 +7,8 @@ import { TeachersProfileComponent } from './teachers-profile/teachers-profile.co
 import { UniversityProfileComponent } from './university-profile/university-profile.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent},
   { path: 'teacher', component: TeacherComponent},
   { path: 'universities', component: UniversityListComponent},
   { path: 'home', component: HomeComponent},
