@@ -30,4 +30,7 @@ export class UniversityProfileComponent implements OnInit{
       }
     )
   }
+  moreInfo(url: string | undefined) {
+    window.open(url)
+  }
 }

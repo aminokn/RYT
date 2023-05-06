@@ -12,12 +12,11 @@
 }
 
 .teacher__pic{
-    padding: 3px;
     position: relative;
     height: 150px;
     width: 150px;
     margin-right: 100px;
-  }
+}
 
 .teacher__text{
     display: flex;
@@ -42,7 +41,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 100px;
+    padding: 30px 100px;
 }
 
 .teacher__rate{
@@ -58,4 +57,8 @@
 
 .rate__title{
     margin-bottom: 30px;
+}
+
+.teacher__rating::after{
+    content: '⭐';
 }

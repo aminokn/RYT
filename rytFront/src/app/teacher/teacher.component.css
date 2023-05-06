@@ -13,7 +13,7 @@
   font-size: 25px;
   padding: 20px 10px;
   width: 24%;
-  height: 350px;
+  height: 370px;
   margin: auto;
 }
 
@@ -41,4 +41,8 @@
   align-self:flex-start;
   margin-left: 50px;
   margin-bottom: 20px;
+}
+
+.teacher .btn{
+  font-size: 20px;
 }

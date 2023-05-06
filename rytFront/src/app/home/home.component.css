@@ -7,9 +7,9 @@
 
 .home__container{
   padding: 200px 150px 0;
-  height: 100vh;
-  backdrop-filter: brightness(70%);
+  height: 900px;
   backdrop-filter: blur(1px);
+  backdrop-filter: brightness(70%);
 }
 
 .home__title{
@@ -39,9 +39,79 @@
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 
   padding: 5px;
-  height: 300px;
-  width: 35%;
+  width: 35%;  
+}
+
+.login__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.login__title{
+  margin: 25px 0;
+}
+
+.login__inputs{
+  width: 100%;
+}
+
+.login__inputs input {
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 15px; 
+}
+
+.login__form .btn {
+  height: 60px;
+  width: 80%;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+input{
+  width: 80%;
+  font-size: 20px;
+}
+
+input::placeholder{
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.logout__form{
+  text-align: center;
+  background-color: #fff;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  padding: 5px;
+  width: 35%;  
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout__title{
+  margin-bottom: 30px;
+}
+
+.logout{
+  margin-top: 20px auto;
+  height: 60px;
+  width: 80%;
+  font-size: 20px;
+}
+
+.logout .btn{
+  height: 60px;
+  width: 80%;
+  font-size: 20px;
+  margin-bottom: 25px;
 }

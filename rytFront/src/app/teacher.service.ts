@@ -20,7 +20,10 @@ export class TeacherService {
   login(username: string, password: string): Observable<AuthToken> {
     return this.client.post<AuthToken>(
       `${this.BASE_URL}/api/login/`,
-      {username, password}
+        {
+        username: username,
+        password: password
+      }
     )
   }
 }

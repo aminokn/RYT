@@ -12,7 +12,8 @@
                             {{uni.name}}
                         </div>
                     </div>
-                    <button class="btn semibold" routerLink="/universities/{{uni.id}}/teacher">See Teachers</button>
+                    <button class="btn semibold blue" routerLink="/universities/{{uni.id}}/teacher">See Teachers</button>
+                    <button class="btn semibold" (click)="moreInfo(uni.url)">Go To website</button>
                 </div>
                 <div class="uni__content">
                     <h2 class="uni__title semibold">University Overview</h2>

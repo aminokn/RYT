@@ -10,21 +10,24 @@
 
       <ng-container *ngIf="!logged">
         <fieldset class="login__form">
-          <h2>Login Form</h2>
-          <div class = "login__input">
-            <label>Username: </label>
-            <input type="text" [(ngModel)]="username">
-            <label>Password: </label>
-            <input type="password" [(ngModel)]="password">
-            <button (click)="login">Login</button>
+          <div class="login__inner">
+            <h2 class="login__title">Login</h2>
+            <div class = "login__inputs">
+                <input type="text" [(ngModel)]="username" placeholder="username">
+                <input type="password" [(ngModel)]="password" placeholder="password">
+            </div>
+            <button (click)="login()" class="btn" >login</button>
           </div>
         </fieldset>
       </ng-container>
 
       <ng-container *ngIf="logged">
-        <div>
-          <button (click)="logout()">Log out</button>
-        </div>
+        <fieldset class="logout__form">
+          <h2 class="logout__title">You are successfully logged on!</h2>
+          <div class="logout">
+            <button class="btn" (click)="logout()">Log out</button>
+          </div>
+        </fieldset>
       </ng-container>
   </div>
 </div>
