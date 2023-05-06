@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import { University } from "./university";
 import { Teacher } from "./teacher";
+import { AuthToken } from './university';
 
 @Injectable({
   providedIn: 'root'
@@ -27,4 +28,11 @@ export class UniversityService {
   sleep(ms: number){ 
     new Promise(r => setTimeout(r, ms));
   }
+  login(username: string, password: string): Observable<AuthToken> {
+    return this.client.post<AuthToken>(
+      `${this.BASE_URL}/api/login/`,
+      {username, password}
+    )
+  }
+
 }

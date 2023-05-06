@@ -43,3 +43,6 @@ export const universities = [
     url: "https://astanait.edu.kz/"
   }
 ];
+export interface AuthToken {
+  token: string;
+}
