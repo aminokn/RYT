@@ -1,5 +1,3 @@
-
-<app-rating></app-rating>
 <div class="teacher__profile">
     <div class="teacher" *ngIf="teacher">
         <div class="container">
@@ -28,17 +26,25 @@
                     <div class="teacher__rate">
                         <h3 class="rate__title">Teacher's Rating</h3>
                         <div class="teacher__rating">
-                            {{teacher.rating}}
+                          <button #firstStar (click)="rate(1)">☆</button>
+                          <button #secondStar (click)="rate(2)">☆</button>
+                          <button #thirdStar (click)="rate(3)">☆</button>
+                          <button #fourthStar (click)="rate(4)">☆</button>
+                          <button #fifthStar (click)="rate(5)">☆</button>
+                          <br>
+                          <br>
+
+                          <p #ratingText >0</p>
+
                         </div>
                     </div>
                     <div class="vline"></div>
-                    <div class="teacher__comments box">
-                        comments
-                    </div>
+                    <textarea #commentArea placeholder = "comment.." class="commentbox">
+                    </textarea>
+                    <button id='send' (click)="sendcomment()" >Send</button>
                 </div>
             </div>
         </div>
     </div>
-   
-</div>
 
+</div>

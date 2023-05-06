@@ -12,9 +12,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'teacher', component: TeacherComponent},
   { path: 'universities', component: UniversityListComponent},
-
   { path: 'rating', component: RatingComponent},
-
   { path: 'home', component: HomeComponent},
   { path: 'universities/:id/teacher', component: TeacherComponent},
   { path: 'universities/:id/teacher/:t_id', component: TeachersProfileComponent},

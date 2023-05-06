@@ -1,6 +1,9 @@
-<h2>Rating</h2>
-<ngx-star-rating (click)="GetRating()" []="ratingcontrol"></ngx-star-rating>
+<div>
+  <h2>Rating</h2>
+<ngx-star-rating (click)="GetRating()" [formControl]="ratingcontrol"></ngx-star-rating>
+
 <h1>OutPut Rating</h1>
 <ngx-star-rating [id]="Finalrating" [disabled]="true"></ngx-star-rating>
 <h2>{{Finalrating}}</h2>
 <h2>Rating from {{ratingcount}} users</h2>
+</div>

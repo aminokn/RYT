@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,7 +34,6 @@ import { NgxStarRatingModule } from 'ngx-star-rating';
     FormsModule,
     HttpClientModule,
     NgxStarRatingModule,
-
   ],
   providers: [
     {
@@ -44,6 +43,8 @@ import { NgxStarRatingModule } from 'ngx-star-rating';
     }
 
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

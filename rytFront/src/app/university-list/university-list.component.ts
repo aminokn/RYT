@@ -1,5 +1,5 @@
 import { Component, OnInit, importProvidersFrom } from '@angular/core';
-import { University, universities } from '../university';
+import { University } from '../university';
 import { UniversityService } from '../university.service';
 @Component({
   selector: 'app-university-list',

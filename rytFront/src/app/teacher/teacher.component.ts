@@ -23,7 +23,7 @@ export class TeacherComponent implements OnInit{
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
-    
+
     const uniId = routeParams.get('id');
 
     if (uniId === null) {
@@ -45,7 +45,7 @@ export class TeacherComponent implements OnInit{
           console.error(error);
         }
       );
-      return;      
+      return;
     }
 
     this.uniService.getUniversityTeachers(Number(uniId)).subscribe(
@@ -73,4 +73,5 @@ export class TeacherComponent implements OnInit{
   LinkedIn(url: string | undefined) {
     window.open(url)
   }
+  
 }

@@ -53,9 +53,29 @@
     width: 33%;
     overflow-y: scroll;
     overflow-wrap: break-word;
-    
+
 }
 
 .rate__title{
     margin-bottom: 30px;
+}
+
+.teacher__rating button{
+  border: none;
+  background: none;
+}
+
+.commentbox{
+  resize: none;
+  width: 300px;
+  height: 300px;
+}
+
+#send{
+  height: 30px;
+  margin-top: 140px;
+  border-radius: 5px;
+  background-color: rgb(53, 76, 205);
+  border: none;
+  color: white;
 }
