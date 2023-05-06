@@ -1,6 +1,6 @@
 <div class="university__container">
-    <a [routerLink]="['/universities', university.id]" *ngFor = "let university of universities" class="test">
-    <div class="university-list">
+    <a [routerLink]="['/universities', university.id]" *ngFor = "let university of universities" class="university">
+    <div class="university-list box">
         
         <h3 class="uni__title">
             <a [title] = "university.name">
@@ -12,8 +12,8 @@
         </div>
         
         
-        <button class="info" type="button" (click)="moreInfo(university.url)">
-            More Info
+        <button class="btn bold" type="button" (click)="moreInfo(university.url)">
+            University Website
         </button>
         
     </div>

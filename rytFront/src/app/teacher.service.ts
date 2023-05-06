@@ -10,11 +10,12 @@ import { AuthToken } from './teacher';
 export class TeacherService {
   BASE_URL = 'http://127.0.0.1:8000'
   constructor(private client: HttpClient) { }
-  getTeachers(): Observable<Teacher[]>{
-    return this.client.get<Teacher[]>(`${this.BASE_URL}/api/teachers/`)
+  
+  getTopTenTeachers(): Observable<Teacher[]>{
+    return this.client.get<Teacher[]>(`${this.BASE_URL}/api/teachers/top_ten`)
   }
   getTeacher(id: number): Observable<Teacher>{
-    return this.client.get<Teacher>(`${this.BASE_URL}/api/teachers/${id}/`)
+    return this.client.get<Teacher>(`${this.BASE_URL}/api/teacher/${id}`)
   }
   login(username: string, password: string): Observable<AuthToken> {
     return this.client.post<AuthToken>(

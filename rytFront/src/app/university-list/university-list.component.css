@@ -19,19 +19,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px 20px;
+  padding: 30px 20px;
 }
-.test {
+.university {
   width: 24%;
-  margin: auto;
+  margin-right: auto;
 }
 
 .university-list{
   font-size: 25px;
-  border: none;
-  border-radius: 8px;
-  padding: 5px;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -40,12 +36,6 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-}
 
-.info{
-  width: 33%;
-  border: none;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-  border-radius: 3px;
-  font-weight: 600;
+  margin-bottom: 30px;
 }

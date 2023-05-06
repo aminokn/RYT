@@ -7,7 +7,7 @@ import { Location } from "@angular/common";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rytFront';
+  title = 'RateYourTeacher';
 
   constructor(private _location: Location) {
   }

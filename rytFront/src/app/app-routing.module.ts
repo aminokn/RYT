@@ -11,9 +11,11 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'teacher', component: TeacherComponent},
   { path: 'universities', component: UniversityListComponent},
-  { path: 'universities/:id/:name', component: TeacherComponent},
-  { path: 'universities/:id', component: UniversityProfileComponent},
-  { path: 'teacher/:id', component: TeachersProfileComponent},
+  { path: 'home', component: HomeComponent},
+  { path: 'universities/:id/teacher', component: TeacherComponent},
+  { path: 'universities/:id/teacher/:t_id', component: TeachersProfileComponent},
+  { path: 'universities/:id', component: UniversityProfileComponent}, 
+  { path: 'teacher/:t_id', component: TeachersProfileComponent},
 ];
 
 @NgModule({
